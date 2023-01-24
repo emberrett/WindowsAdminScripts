@@ -2,7 +2,7 @@
 A collection of helpful scripts from my time as a system admin.
 
 
-##InstallVPN.bat
+## InstallVPN.bat
 
 Simple batch script to create L2TP VPN connection with pre-shared key on Windows 10. Once configured, will allow you to create VPN for all users in one click.
 
@@ -17,7 +17,7 @@ Optional settings include:
 
 Batch script intializes elevated PowerShell script, which in turn runs another PowerShell script which bypasses the client's execution policy and adds a VPN based on the variables provided by the user.
 
-##CreateUser.ps1
+## CreateUser.ps1
 This PowerShell script creates a user in AD after prompting for the following user input:
 *First name of the user
 *Last name of the user
@@ -42,7 +42,7 @@ After the variables are modified and the inputs are given, the script will:
 
 *Actual company name/domain replaced by Contoso, Microsoft's placeholder company.
 
-##FindLostComputers.ps1
+## FindLostComputers.ps1
 Summary: Finds computers in Active Directory that do not have a manager or description listed. Returns information about lost computers in CSV format.
 
 This PowerShell script iterates through computers whose ManagedBy and Description attributes are null. Based on this list, the script pings each computer and returns the results into a CSV file which is exported to the scripts root, with the date as the title. Result columns include:
@@ -55,7 +55,7 @@ This PowerShell script iterates through computers whose ManagedBy and Descriptio
 
 The results are sorted by Status, then LastLogon.
 
-##MSIList.ps1
+## MSIList.ps1
 PowerShell script that provides list of MSIs installed on a Windows machine. Includes following information:
 *Name (of the software the MSI installs)
 *Identifying Number of MSI (GUID)
@@ -63,6 +63,6 @@ PowerShell script that provides list of MSIs installed on a Windows machine. Inc
 
 The list is sorted by name.
 
-##NumWin7Computers.ps1
+## NumWin7Computers.ps1
 Very simple PowerShell script that finds the number of Windows 7 computers listed in Active Directory. Can be easily modified to find total number of computers with any Windows OS.
 
